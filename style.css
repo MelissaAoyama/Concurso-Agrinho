@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4fff4;
+    color:#333;
+}
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854');
+    background-size: cover;
+    background-position:center;
+    height:100vh;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:rgba(0,0,0,0.4);
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#8cff66;
+}
+
+.hero{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h2{
+    font-size:4rem;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:1.3rem;
+    max-width:700px;
+}
+
+button{
+    margin-top:25px;
+    padding:15px 30px;
+    border:none;
+    background:#3fa34d;
+    color:white;
+    font-size:1rem;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#2b7d36;
+}
+
+.section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:30px;
+    font-size:2.5rem;
+    color:#2e7d32;
+}
+
+.green{
+    background:#dff5df;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    width:300px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.contador{
+    margin:30px auto;
+    background:#2e7d32;
+    color:white;
+    width:250px;
+    padding:20px;
+    border-radius:15px;
+}
+
+#numero{
+    font-size:3rem;
+    margin-top:10px;
+}
+
+.galeria{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.imagens{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+    margin-top:30px;
+}
+
+.imagens img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.imagens img:hover{
+    transform:scale(1.05);
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.rodape{
+    margin-top:15px;
+    font-size:0.9rem;
+}
+
+@media(max-width:768px){
+
+    .hero h2{
+        font-size:2.5rem;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:10px;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+}
