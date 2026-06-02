@@ -3,143 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho 2026 | Agro Forte, Futuro Sustentável</title>
+    <title>Agro Forte, Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">🌱 <span>Agrinho 2026</span></div>
-            <ul class="nav-links">
-                <li><a href="#sobre">O Tema</a></li>
-                <li><a href="#sustentabilidade">Pilares</a></li>
-                <li><a href="#tecnologia">Tecnologia</a></li>
-                <li><a href="#quiz">Desafio Quiz</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-            </ul>
-        </nav>
-
-        <div class="hero">
-            <div class="hero-content">
-                <h2>Agro Forte, Futuro Sustentável</h2>
-                <p>Descubra como o equilíbrio perfeito entre a produção de alimentos e a preservação do meio ambiente garante o amanhã.</p>
-                <a href="#quiz" class="btn-principal">Testar Meus Conhecimentos 🚀</a>
-            </div>
+    <header class="main-header">
+        <div class="header-container">
+            <h1 class="logo">Agro<span>Sustentável</span></h1>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#calculadora">Impacto</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
-        <section id="sobre" class="section">
-            <div class="container">
-                <h2>🌾 O Equilíbrio Necessário</h2>
-                <p class="subtitulo">Como produzir para o mundo e proteger a nossa casa?</p>
-                <div class="grid-sobre">
-                    <div class="texto-sobre">
-                        <p>O agronegócio moderno vai muito além de plantar e colher. Hoje, o Brasil utiliza a **ciência e a responsabilidade ecológica** para se manter como uma potência alimentícia global, sem abrir mão da proteção das nossas florestas e recursos hídricos.</p>
-                        <p>A sustentabilidade no campo significa adotar práticas que renovam a terra, protegem os animais e garantem água limpa para as próximas gerações.</p>
-                    </div>
-                    <div class="card-destaque">
-                        <h4>💡 Você sabia?</h4>
-                        <p>O plantio direto na palha evita a erosão do solo e retém muito mais água na terra, diminuindo a necessidade de irrigação artificial!</p>
-                    </div>
-                </div>
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h2>Equilíbrio entre Produção e Meio Ambiente</h2>
+                <p>Descubra como a tecnologia e as boas práticas estão transformando o agronegócio em uma força verde para o futuro do planeta.</p>
+                <button id="btn-conhecer" class="btn-primary">Saiba Mais</button>
             </div>
         </section>
 
-        <section id="sustentabilidade" class="section green">
-            <div class="container">
-                <h2>🌳 Tecnologia e Práticas Verdes</h2>
-                <p class="subtitulo">As três bases do campo do futuro</p>
-                
-                <div class="cards">
-                    <div class="card">
-                        <div class="icon">💧</div>
-                        <h3>Irrigação Inteligente</h3>
-                        <p>Sensores gotejam a quantidade exata de água que a planta precisa, reduzindo o desperdício de recursos em até 60%.</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="icon">☀️</div>
-                        <h3>Energia Limpa</h3>
-                        <p>Fazendas utilizam painéis solares e biomassa (energia gerada a partir de resíduos orgânicos) para abastecer seus maquinários.</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="icon">🌱</div>
-                        <h3>Rotação de Culturas</h3>
-                        <p>Alternar o plantio de diferentes espécies (como soja e milho) recupera os nutrientes do solo naturalmente e evita pragas.</p>
-                    </div>
-                </div>
+        <section id="pilares" class="pilares-section">
+            <h3 class="section-title">Nossos Pilares</h3>
+            <div class="cards-container">
+                <article class="card" data-info="Uso de drones e IA para otimizar o plantio e reduzir defensivos.">
+                    <div class="card-icon">🚜</div>
+                    <h4>Tecnologia no Campo</h4>
+                    <p>Inovação para produzir mais com menos recursos.</p>
+                </article>
+                <article class="card" data-info="Técnicas que mantêm os nutrientes da terra sem desmatamento.">
+                    <div class="card-icon">🌱</div>
+                    <h4>Solo Vivo</h4>
+                    <p>Manejo sustentável e rotação de culturas.</p>
+                </article>
+                <article class="card" data-info="Sistemas de irrigação gota a gota que evitam o desperdício.">
+                    <div class="card-icon">💧</div>
+                    <h4>Gestão Hídrica</h4>
+                    <p>Preservação dos recursos hídricos essenciais.</p>
+                </article>
+            </div>
+            <div id="painel-detalhes" class="detalhes-painel hidden">
+                <p id="texto-detalhe">Clique em um pilar para ver mais detalhes.</p>
             </div>
         </section>
 
-        <section id="tecnologia" class="section">
-            <div class="container">
-                <h2>🚜 Conectividade e Inovação</h2>
-                
-                <div class="contador-container">
-                    <div class="contador-box">
-                        <h3 id="numero">0</h3>
-                        <p>Árvores salvas por minuto com monitoramento via satélite</p>
-                    </div>
-                </div>
-
-                <p class="texto-centralizado">
-                    O uso de <strong>Drones, Inteligência Artificial e Sensores IoT</strong> permite mapear pragas milimetricamente. O produtor aplica defensores apenas onde é estritamente necessário, reduzindo drasticamente o impacto químico na natureza.
-                </p>
+        <section id="calculadora" class="calc-section">
+            <h3>Simulador de Economia Hídrica</h3>
+            <p>Descubra quantos litros de água sua propriedade pode economizar adotando a irrigação inteligente (média de 30% de economia).</p>
+            <div class="calc-form">
+                <label for="gasto-agua">Consumo atual estimado (litros/mês):</label>
+                <input type="number" id="gasto-agua" placeholder="Ex: 50000">
+                <button id="btn-calcular" class="btn-secondary">Calcular Economia</button>
+                <div id="resultado-calc" class="resultado-box hidden"></div>
             </div>
         </section>
 
-        <section id="quiz" class="section quiz-section">
-            <div class="container">
-                <h2>🎮 Desafio Agrinho: Teste Seus Conhecimentos!</h2>
-                <p class="subtitulo">Você sabe tudo sobre o Agro Sustentável? Responda rápido!</p>
-                
-                <div class="quiz-container">
-                    <div id="pergunta-box">
-                        <p id="pergunta-texto">Carregando pergunta...</p>
-                        <div id="alternativas-box">
-                            </div>
-                    </div>
-                    <div id="resultado-quiz" class="oculto">
-                        <h3>Parabéns por concluir o desafio! 🎉</h3>
-                        <p id="placar-texto"></p>
-                        <button onclick="reiniciarQuiz()" class="btn-reiniciar">Jogar Novamente 🔄</button>
-                    </div>
+        <section id="contato" class="contato-section">
+            <h3>Fale Conosco</h3>
+            <form id="form-contato" novalidate>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" required minlength="3">
+                    <span class="error-message" id="erro-nome"></span>
                 </div>
-            </div>
-        </section>
-
-        <section id="galeria" class="section galeria">
-            <div class="container">
-                <h2>📸 Galeria: O Campo em Harmonia</h2>
-                <div class="imagens-grid">
-                    <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Plantação jovem sustentável">
-                        <span class="legenda">Produção Consciente</span>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Vale verde preservado">
-                        <span class="legenda">Reservas Preservadas</span>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" alt="Trator tecnológico operando">
-                        <span class="legenda">Tecnologia no Campo</span>
-                    </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required>
+                    <span class="error-message" id="erro-email"></span>
                 </div>
-            </div>
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            </form>
+            <div id="sucesso-envio" class="sucesso-box hidden">Mensagem enviada com sucesso! 🌱</div>
         </section>
     </main>
 
-    <footer>
-        <div class="container footer-content">
-            <h2>📚 Concurso Agrinho 2026</h2>
-            <p class="tema-obrigatorio"><strong>Tema:</strong> Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente.</p>
-            <hr>
-            <p class="creditos">Projeto Escolar desenvolvido para a categoria Programação / Arte Digital.</p>
-        </div>
+    <footer class="main-footer">
+        <p>&copy; 2026 AgroSustentável. Projeto Acadêmico. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
