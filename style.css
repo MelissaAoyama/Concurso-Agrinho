@@ -51,7 +51,7 @@ body {
 .btn-secondary {
     background-color: var(--rosa-principal);
     color: var(--verde-escuro);
-    margin-top: 15px; /* Ajustado para dar espaço ao input */
+    margin-top: 15px;
 }
 
 .btn-secondary:hover {
@@ -120,7 +120,6 @@ body {
     text-align: center;
 }
 
-/* CORRIGIDO: Seletor consertado para aplicar o max-width corretamente */
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
@@ -261,5 +260,5 @@ footer {
     .calc-section, .contato-section {
         margin: 30px 20px;
         padding: 20px;
-    }                                                                                                                                                                                      
-} /* CORRIGIDO: Chave de fechamento da Media Query adicionada */
+    }
+}
